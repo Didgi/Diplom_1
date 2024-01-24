@@ -1,15 +1,11 @@
 package praktikum;
 
-import junit.framework.TestCase;
 import org.apache.commons.lang3.RandomStringUtils;
 import org.junit.Assert;
 import org.junit.Test;
-import org.mockito.Mock;
 
 
 public class IngredientTest {
-    @Mock
-    IngredientType ingredientType;
     private final String ingredientName = RandomStringUtils.randomAlphabetic(8);
     private final Float ingredientPrice = Float.valueOf(RandomStringUtils.randomNumeric(3));
     @Test
