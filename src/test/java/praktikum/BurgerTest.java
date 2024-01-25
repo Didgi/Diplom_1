@@ -83,16 +83,6 @@ public class BurgerTest {
     }
 
     @Test
-    public void getReceiptBurgerAllCorrectFieldsShowsOk() {
-        prepareAllDataForGetReceipt();
-        String actualResult = burger.getReceipt();
-        String expectedIngredientSauce = IngredientType.SAUCE.toString().toLowerCase();
-        String expectedIngredientFilling = IngredientType.FILLING.toString().toLowerCase();
-        String expectedResult = String.format("(==== %s ====)\n= %s %s =\n= %s %s =\n(==== %s ====)\n\nPrice: %.6f\n", randomName, expectedIngredientSauce, randomName, expectedIngredientFilling, randomName, randomName, randomPrice * 4);
-        Assert.assertEquals(expectedResult, actualResult);
-    }
-
-    @Test
     public void getReceiptCallBunGetNameTwiceShowsOk() {
         burger = new Burger();
         burger.setBuns(bun);

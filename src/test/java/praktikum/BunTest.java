@@ -1,10 +1,8 @@
 package praktikum;
 
 import org.apache.commons.lang3.RandomStringUtils;
-import org.apache.commons.lang3.RandomStringUtils;
 import org.junit.Assert;
 import org.junit.Test;
-//import com.github.javafaker.Faker;
 
 public class BunTest {
     private final String bunName = RandomStringUtils.randomAlphabetic(8);
