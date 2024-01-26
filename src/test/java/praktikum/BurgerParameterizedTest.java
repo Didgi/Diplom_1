@@ -25,7 +25,7 @@ public class BurgerParameterizedTest {
     Burger burger;
 
 
-    public BurgerParameterizedTest(String bunName, IngredientType ingredientType, String ingredientName,  Float bunPrice, Float ingredientPrice,  String expectedResult) {
+    public BurgerParameterizedTest(String bunName, IngredientType ingredientType, String ingredientName, Float bunPrice, Float ingredientPrice, String expectedResult) {
         this.bunName = bunName;
         this.ingredientType = ingredientType;
         this.ingredientName = ingredientName;
@@ -43,8 +43,8 @@ public class BurgerParameterizedTest {
     @Parameterized.Parameters
     public static Object[][] orderData() {
         return new Object[][]{
-                 {"Булочка с кунжутом", IngredientType.SAUCE, "терияки", 3.0F, 1.0F, String.format("(==== %s ====)\n= %s %s =\n(==== %s ====)\n\nPrice: %.6f\n", "Булочка с кунжутом", IngredientType.SAUCE.toString().toLowerCase(), "терияки", "Булочка с кунжутом", 7.0F)},
-                 {"Булочка постная", IngredientType.FILLING, "котлетка", 3.0F, 5.0F, String.format("(==== %s ====)\n= %s %s =\n(==== %s ====)\n\nPrice: %.6f\n", "Булочка постная", IngredientType.FILLING.toString().toLowerCase(), "котлетка", "Булочка постная", 11.0F)},
+                {"Булочка с кунжутом", IngredientType.SAUCE, "терияки", 3.0F, 1.0F, String.format("(==== %s ====)\n= %s %s =\n(==== %s ====)\n\nPrice: %.6f\n", "Булочка с кунжутом", IngredientType.SAUCE.toString().toLowerCase(), "терияки", "Булочка с кунжутом", 7.0F)},
+                {"Булочка постная", IngredientType.FILLING, "котлетка", 3.0F, 5.0F, String.format("(==== %s ====)\n= %s %s =\n(==== %s ====)\n\nPrice: %.6f\n", "Булочка постная", IngredientType.FILLING.toString().toLowerCase(), "котлетка", "Булочка постная", 11.0F)},
         };
     }
 
