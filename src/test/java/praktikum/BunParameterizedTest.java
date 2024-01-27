@@ -9,7 +9,7 @@ import org.junit.runners.Parameterized;
 @RunWith(Parameterized.class)
 public class BunParameterizedTest {
     private static final String randomName = RandomStringUtils.randomAlphabetic(8);
-    private static Float randomPrice = Float.valueOf(RandomStringUtils.randomNumeric(3));
+    private static final Float randomPrice = Float.valueOf(RandomStringUtils.randomNumeric(3));
     private final String bunName;
     private final float bunPrice;
 
